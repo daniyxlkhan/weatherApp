@@ -1,17 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary: #1a5a83;
+    --secondary: #007BFF;
+    --soft-accent: #E3F2FD;
+    --muted: #5A7083;
+}
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
 }
 
-body {
-    background: linear-gradient(to top, #195077, #1a8aac);
+html, body {
     height: 100vh;
-    margin: 0;
+    background: linear-gradient(to top, #87CEFA, #dadae1) no-repeat;
 }
 
 button {
     color: white;
-    background-color: #27384d;
+    background-color: var(--primary);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .top-nav {
@@ -19,6 +35,13 @@ button {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     margin: 20px;
+}
+
+.logo-icon {
+    max-width: 20%;
+    min-width: 100px;
+    max-height: 20%;
+    min-height: 100px;
 }
 
 #form {
@@ -32,15 +55,15 @@ button {
 #location-input {
     border: transparent;
     border-radius: 25px;
-    padding: 15px;
-    background-color: #27384d;
+    padding: 20px 20px 20px 20px;
+    background-color: var(--primary);
     width: 100%;
     color: white;
 
 }
 
 #location:focus {
-    background-color: #27384d;
+    background-color: var(--primary);
     outline: white;
 }
 
@@ -53,13 +76,55 @@ button {
     filter: invert(100%);
 }
 
+.display {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .buttons {
     justify-self: flex-end;
+    display: flex;
 }
 
 .temp-button {
+    display: flex;
+    justify-content: center;
     border: transparent;
     border-radius: 20px;
-    padding: 10px 30px 10px 30px;
+    padding: 0px 20px 0px 20px;
+    margin: 10px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.temp-icons {
+    filter: invert(100%);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#git-link {
+    text-decoration: none;
+    letter-spacing: 0;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    height: 38px;
+}
+
+#git-logo {
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#git-link:hover #git-logo {
+    transform: rotate(360deg) scale(1.2);
 }

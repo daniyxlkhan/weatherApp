@@ -6,10 +6,10 @@
     <title>Instant Weather</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="main">
         <nav class="top-nav">
             <div class="logo">
-                <img src="./assets/weather-svgrepo-com%20(1).svg" alt="sun and clouds" width="120px" height="120px">
+                <img src="./assets/animation-ready/solar-eclipse.svg" class="logo-icon" alt="sun and clouds">
             </div>
             <form id="form">
                 <label for="location"></label>
@@ -18,19 +18,28 @@
             </form>
             <div class="buttons">
                 <button class="temp-button C">
-                    C
+                    <img src="assets/animation-ready/celsius.svg" class="temp-icons" alt="celsius" width="45px" height="45px">
                 </button>
                 <button class="temp-button F">
-                    F
+                    <img src="assets/animation-ready/fahrenheit.svg" class="temp-icons" alt="fahrenheit" width="45px" height="45px">
                 </button>
             </div>
         </nav>
         <div class="display">
+            <div class="weather-card">
 
+            </div>
         </div>
         <footer class="footer">
-
+            <div class="author">
+                <a id="git-link" href="https://github.com/daniyxlkhan">
+                    <div>Developed by</div>
+                    <img id="git-logo" src="assets/github-mark.svg"/>
+                    <div>Daniyal Khan</div>
+                </a>
+            </div>
         </footer>
     </div>
+
 </body>
 </html>
