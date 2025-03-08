@@ -2,7 +2,6 @@
 
 :root {
     --primary: #1a5a83;
-    --secondary: #007BFF;
     --soft-accent: #E3F2FD;
     --muted: #5A7083;
 }
@@ -30,6 +29,7 @@ button {
     height: 100%;
 }
 
+/* -------------------------------- TOP NAV -------------------------------- */
 .top-nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -76,12 +76,6 @@ button {
     filter: invert(100%);
 }
 
-.display {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
 .buttons {
     justify-self: flex-end;
     display: flex;
@@ -101,6 +95,16 @@ button {
 .temp-icons {
     filter: invert(100%);
 }
+
+/* -------------------------------- CONTENT -------------------------------- */
+.display {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* -------------------------------- FOOTER  -------------------------------- */
 
 footer {
     display: flex;
