@@ -32,6 +32,7 @@ export function searchLocation() {
 
     function showWeather() {
         const location = document.getElementById("location-input").value.trim();
+        const locNotFound = document.querySelector(".loc-not-found");
 
         if (!location) {
             console.warn("Please enter a location!");
@@ -41,9 +42,11 @@ export function searchLocation() {
         getCurrentWeather(location, currentUnit)
             .then(weather => {
                 if (weather) {
+                    locNotFound.classList.add("not-visible");
                     console.log(weather);
                     weatherCardGenerator(weather);
                 } else {
+                    locNotFound.classList.remove("not-visible");
                     console.error("Given location not found!");
                 }
             });

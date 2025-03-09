@@ -5,7 +5,7 @@ async function getCurrentWeather(city, unit) {
     try {
         let weather = await getWeatherFromAPI(city);
         if (!weather) throw new Error("Weather data is empty");
-        console.log(weather);
+
         let formattedWeather = formatWeather(weather)
         return {
             temperature: formattedWeather.getTemperature(unit),

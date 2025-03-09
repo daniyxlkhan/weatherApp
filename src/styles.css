@@ -29,6 +29,10 @@ button {
     height: 100%;
 }
 
+.not-visible {
+    display: none !important;
+}
+
 /* -------------------------------- TOP NAV -------------------------------- */
 .top-nav {
     display: grid;
@@ -97,10 +101,6 @@ button {
 }
 
 /* -------------------------------- CONTENT -------------------------------- */
-.not-visible {
-    display: none !important;
-}
-
 .weather-container {
     display: flex;
     flex-direction: column;
