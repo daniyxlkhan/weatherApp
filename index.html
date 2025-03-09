@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Weather</title>
+    <link rel="icon" type="image/svg+xml" href="80dbfa0196e5869a3d3e.svg">
+<script defer src="main.js"></script></head>
+<body>
+    <div class="main">
+        <nav class="top-nav">
+            <div class="logo">
+                <img src="4cfa22346da1ceabe8dd.svg" class="logo-icon" alt="sun and clouds">
+            </div>
+            <form id="form">
+                <label for="location-input"></label>
+                <input type="text" id="location-input" placeholder="Enter a location">
+                <img src="1bb910fc69099ca52441.svg" alt="search icon" class="search-icon">
+            </form>
+            <div class="temp-switch-buttons">
+                <button class="temp-button C">
+                    <img src="c5eabf230ed432f48f9a.svg" class="temp-icons" alt="celsius" width="45px" height="45px">
+                </button>
+                <button class="temp-button F">
+                    <img src="b25975a14c7b02ba536a.svg" class="temp-icons" alt="fahrenheit" width="45px" height="45px">
+                </button>
+            </div>
+        </nav>
+
+        <div class="weather-container">
+            <div class="current-weather not-visible">
+                <div class="current-city"></div>
+                <div class="current-country"></div>
+                <div class="current-date"></div>
+                <div class="current-info">
+                    <div>
+                        <img class="current-weather-img">
+                        <div class="current-description"></div>
+                    </div>
+                    <div class="current-conditions">
+                        <div class="current-temp"></div>
+                        <div class="current-feels-like"></div>
+                        <div class="current-precipitation"></div>
+                        <img class="wind-direction">
+                        <div class="current-windspeed"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="loc-not-found not-visible">
+                No location match found!
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="author">
+                <a id="git-link" href="https://github.com/daniyxlkhan">
+                    <div>Developed by</div>
+                    <img id="git-logo" src="6fa18895f6e6c7772cab.svg"/>
+                    <div>Daniyal Khan</div>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
