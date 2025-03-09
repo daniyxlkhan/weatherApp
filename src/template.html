@@ -16,7 +16,7 @@
                 <input type="text" id="location-input" placeholder="Enter a location">
                 <img src="assets/search-5-svgrepo-com.svg" alt="search icon" class="search-icon">
             </form>
-            <div class="buttons">
+            <div class="temp-switch-buttons">
                 <button class="temp-button C">
                     <img src="assets/animation-ready/celsius.svg" class="temp-icons" alt="celsius" width="45px" height="45px">
                 </button>
@@ -27,8 +27,23 @@
         </nav>
 
         <div class="weather-container">
-            <div class="current-weather">
-
+            <div class="current-weather not-visible">
+                <div class="current-city"></div>
+                <div class="current-country"></div>
+                <div class="current-date"></div>
+                <div class="current-info">
+                    <div>
+                        <img class="current-weather-img">
+                        <div class="current-description"></div>
+                    </div>
+                    <div class="current-conditions">
+                        <div class="current-temp"></div>
+                        <div class="current-feels-like"></div>
+                        <div class="current-precipitation"></div>
+                        <img class="wind-direction">
+                        <div class="current-windspeed"></div>
+                    </div>
+                </div>
             </div>
         </div>
 
