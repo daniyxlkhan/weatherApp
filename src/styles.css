@@ -59,7 +59,7 @@ button {
     background-color: var(--primary);
     width: 100%;
     color: white;
-
+    font-size: 20px;
 }
 
 #location:focus {
@@ -97,12 +97,11 @@ button {
 }
 
 /* -------------------------------- CONTENT -------------------------------- */
-.display {
+.weather-container {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
-
 
 /* -------------------------------- FOOTER  -------------------------------- */
 
@@ -131,4 +130,26 @@ footer {
 
 #git-link:hover #git-logo {
     transform: rotate(360deg) scale(1.2);
+}
+
+@media (max-width: 1000px) {
+    .top-nav {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        gap: 10px;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .buttons {
+        order: 2;
+    }
+
+    #form {
+        order: 3;
+        width: 80%;
+    }
 }
