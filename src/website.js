@@ -53,8 +53,6 @@ export function searchLocation() {
     }
 }
 
-
-
 function weatherCardGenerator(weather) {
     const images = require.context("./assets/animation-ready", false, /\.svg$/);
     const now = new Date();

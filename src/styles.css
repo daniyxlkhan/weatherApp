@@ -66,6 +66,11 @@ button {
     font-size: 20px;
 }
 
+#location-input::placeholder {
+    color: #c4d0d6;
+    opacity: 1;
+}
+
 #location:focus {
     background-color: var(--primary);
     outline: white;

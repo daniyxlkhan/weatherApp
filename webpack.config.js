@@ -33,6 +33,13 @@ module.exports = {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: "asset/resource",
             },
+            {
+                test: /\.svg$/,
+                type: "asset/resource",
+                generator: {
+                    filename: "assets/animation-ready/[name][ext]", // Keeps original filename
+                },
+            },
         ],
     },
 };
