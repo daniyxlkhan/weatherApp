@@ -3,7 +3,8 @@ A minimal weather app, based on data from https://www.visualcrossing.com/weather
 
 💻 [Live Demo](https://daniyxlkhan.github.io/Instant-Weather/) 💻
 
-![screenshot]()
+
+![screenshot](https://github.com/daniyxlkhan/weather-app/blob/main/src/assets/ss1.png)
 
 ## 💡 Features
 - Searchable weather location.
