@@ -1,7 +1,7 @@
 # weather-app
 A minimal weather app, based on data from https://www.visualcrossing.com/weather-api/
 
-💻 [Live Demo](https://daniyxlkhan.github.io/Instant-Weather/) 💻
+💻 [Live Demo](https://daniyxlkhan.github.io/weatherApp/) 💻
 
 <br>
 <p align="center">
